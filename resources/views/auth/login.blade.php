@@ -29,7 +29,7 @@
                 <form class="space-y-6" method="POST" action="{{ route('login.store') }}">
                     @csrf
 
-                    <x-form-input 
+                    <x-form-input
                         name="emailOrName"
                         label="Email ou Pseudo"
                         type="text"
@@ -38,13 +38,14 @@
                         required="true"
                     />
 
-                    <x-form-input 
+                    <x-form-input
                         name="password"
                         label="Mot de passe"
                         type="password"
                         placeholder="Entrez votre mot de passe"
                         autocomplete="current-password"
                         required="true"
+                        :showPasswordToggle="true"
                     />
 
                     <div class="flex items-center justify-between">
@@ -60,7 +61,7 @@
                         @enderror
                     </div>
 
-                    <x-form-button 
+                    <x-form-button
                         text="Se connecter"
                         :icon="$signInIcon"
                     />

@@ -55,6 +55,7 @@
                         placeholder="Créez un mot de passe"
                         autocomplete="new-password"
                         required="true"
+                        :showPasswordToggle="true"
                     />
 
                     <!-- Password Strength Requirements -->
@@ -144,6 +145,7 @@
                         placeholder="Confirmez votre mot de passe"
                         autocomplete="new-password"
                         required="true"
+                        :showPasswordToggle="true"
                     />
 
                     <x-form-input
